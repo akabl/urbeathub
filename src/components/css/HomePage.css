@@ -10,7 +10,7 @@
   
   border-radius: 17px;
   }
-  
+
   .Headerlogo{
     
     justify-content: center;
@@ -35,7 +35,8 @@
     
   
   }
-
+  
+  
   .homepageWrapper {
     
       background-color: #5e788c;
@@ -80,11 +81,7 @@
     
     background-color: #5760a7;
     width: 100%;
-   
-  
-  
   }
-  
   
   .GroupCb {
     
@@ -92,10 +89,8 @@
     width: 100%;
    row-gap: 0px;
     height: inherit;
-  
-  
-  
   }
+ 
   
   
   .GroupC {
@@ -620,5 +615,10 @@
   }
   .market span{
     gap: 10px;
+  }
+
+  .playerimage{
+    height: 60px;
+    width: 60px;
   }
   

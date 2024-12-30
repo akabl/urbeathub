@@ -9,6 +9,7 @@ import {
   useNavigate,
 } from "react-router-dom";
 
+
 //Header Logo
 function Headerlogo() {
   return (
@@ -28,7 +29,6 @@ function HeaderSearchBar() {
     ></input>
   );
 }
-
 //Header cart Icon
 function HeaderCartIcon() {
   return (
@@ -175,6 +175,7 @@ function HomePage() {
 
   // This is where the JSX starts to render, I copied all your JSX to this place, Because of the Router
 
+
   function GroupA() {
     return (
       <div className="GroupA">
@@ -182,7 +183,9 @@ function HomePage() {
       </div>
     );
   }
-
+  
+  
+  
   function GroupB() {
     return (
       <div className="GroupB">
@@ -207,6 +210,7 @@ function HomePage() {
     return (
       <div className="GroupC1">
         <div className="top">
+        <img src={songs[currentIndex].image} alt="top" className="playerimage" />
           {/*The Play/Pause Button*/}
           <button onClick={togglePlayPause}>
             {isPlaying ? "Pause" : "Play"}
@@ -246,6 +250,14 @@ function HomePage() {
             <button onClick={increaseVolume}>+</button>
             <button onClick={decreaseVolume}>-</button>
           </div>
+
+          <input
+          type="text"
+          value={newComment}
+          onChange={(e) => setNewComment(e.target.value)}
+          placeholder="Add a comment..."
+        />
+        <button onClick={addComment}>Add Comment</button>
         </div>
       </div>
     );
@@ -406,8 +418,11 @@ function HomePage() {
     );
   }
 
+
+
   return (
     <div className="homepageWrapper">
+     
       <GroupA />
       <GroupB />
       <GroupC1 />
@@ -416,6 +431,7 @@ function HomePage() {
       <GroupE />
       <GroupF />
       <GroupG />
+      
     </div>
   );
 }
